@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maryam Aladsani - Software Engineering Student at KFUPM. Portfolio showcasing projects, skills, and volunteering experience.">
+    <meta name="author" content="Maryam Aladsani">
+    <meta name="theme-color" content="#00343a">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maryam Aladsani | Software Engineering Student">
+    <meta property="og:description" content="Software Engineering Student at KFUPM. Explore my projects, skills, and experience.">
+    <meta property="og:url" content="https://maryamaladsani.site">
+
+    <title>Maryam Aladsani | Software Engineering Student</title>
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://api.github.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- CSS  -->
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+<!--    <link rel="stylesheet" href="css/theme.css">-->
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/skills.css">
+
+<!--    <link rel="stylesheet" href="css/projects.css">-->
+    <link rel="stylesheet" href="css/volunteering.css">
+    <link rel="stylesheet" href="css/summaries.css">
+
+    <!--    <link rel="stylesheet" href="css/contact.css">-->
+    <link rel="stylesheet" href="css/nstyle.css">
+
+    <!-- JavaScript -->
+    <script src="js/theme.js" defer></script>
+    <script src="js/hero.js" defer></script>
+    <script src="js/scroll-progress.js" defer></script>
+    <script src="js/github-api.js" defer></script>
+    <script src="js/volunteering.js" defer></script>
+    <script src="js/summaries.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/scroll-animation.js" defer></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+</head>
+<body>
+<!-- Skip Link for Accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Indicator -->
+<div id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+
+<!-- Header / Navigation -->
+<header class="topbar" role="banner">
+    <nav class="nav" aria-label="Primary navigation">
+        <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle color theme"
+                aria-pressed="false">
+            🌙
+        </button>
+        <ul class="nav__links">
+
+            <li><a href="#home">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#summaries">Studying Notes</a></li>
+            <li>
+                <a href="assets/cv/Maryam_Aladsani_CV.pdf"
+                   class="cv-download-btn"
+                   download>Download CV</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main id="main-content">
+    <!-- Hero Section -->
+    <!-- Modern Hero Section with Enhanced Interactivity -->
+    <section id="home" class="hero hero--modern" aria-labelledby="hero-heading">
+
+        <!-- Main Content Container -->
+        <div class="hero__container">
+
+            <figure class="hero__photo">
+                <img
+                        src="assets/images/mainImage/profile3.jpeg"
+                        alt="Maryam Aladsani - Portrait photo"
+                        width="300"
+                        height="300"
+                        loading="eager">
+            </figure>
+
+            <!-- Hero Content -->
+            <div class="hero__content hero__content--modern">
+
+                <!-- Main Heading with Animation -->
+                <h1 id="hero-heading" class="hero__title">
+                    <span class="title-word">Maryam Aladsani</span>
+                </h1>
+
+                <!-- About Section -->
+                <section id="about" class="about-intro" aria-labelledby="about-heading">
+                    <div class="about-intro__content">
+                        <p>
+                            Passionate Junior in Software Engineering, adept at development and problem-solving,
+                            keen to apply theoretical knowledge to practical projects. Strong analytical skills,
+                            quick learner, dedicated team player committed to growth, demonstrated leadership abilities,
+                            and skilled in team collaboration.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Social Links with Enhanced Styling -->
+                <div class="hero__social" role="list" aria-label="Contact links">
+                    <a
+                            class="social-link"
+                            href="mailto:maryamsaladsani@gmail.com"
+                            aria-label="Send email"
+                            role="listitem"
+                            title="Email">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                        </svg>
+                        <span class="social-label">Email</span>
+                    </a>
+                    <a
+                            class="social-link"
+                            href="https://github.com/maryamsaladsani"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub profile"
+                            role="listitem"
+                            title="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                        </svg>
+                        <span class="social-label">GitHub</span>
+                    </a>
+                    <a
+                            class="social-link"
+                            href="https://shorturl.at/3AFIq"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn profile"
+                            role="listitem"
+                            title="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+                        </svg>
+                        <span class="social-label">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-animation">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+
+        <div class="carousel">
+            <div class="group">
+                <div class="card">
+                    <img src="assets/images/skillsLogos/javaLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/pythonLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/htmlcssjsLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/wordPressLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/figmaLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/cSharpLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/reactLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/sqlLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/streamlitLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/javaLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/pythonLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/htmlcssjsLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/wordPressLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/figmaLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/cSharpLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/reactLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/sqlLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+                <div class="card">
+                    <img src="assets/images/skillsLogos/streamlitLogo.png" alt="" class="skill-logo" loading="lazy" width="56" height="56">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Recent Projects</h2>
+        <p class="projects-intro">
+            Check out my latest repositories from GitHub!
+        </p>
+
+        <!-- Loading State -->
+        <div id="projects-loading" class="projects-loading" role="status">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p>Loading projects from GitHub...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="projects-error" class="projects-error hidden" role="alert">
+            <p class="error-message">Unable to load projects. Please check your connection and try again.</p>
+            <button id="retry-fetch" class="retry-button" type="button">
+                Retry
+            </button>
+        </div>
+
+        <!-- Projects Grid (populated by JavaScript) -->
+        <div id="projects-container" role="list" aria-label="GitHub repositories"></div>
+    </section>
+
+<!--    &lt;!&ndash; Volunteering Section &ndash;&gt;-->
+<!--    <section id="volunteering" class="volunteering" aria-labelledby="volunteering-heading">-->
+<!--        <h2 id="volunteering-heading">Volunteering Experience</h2>-->
+
+<!--        &lt;!&ndash; Filter Controls &ndash;&gt;-->
+<!--        <div class="filter-bar" role="group" aria-label="Filter volunteering experiences">-->
+<!--            <button-->
+<!--                    class="filter-chip active"-->
+<!--                    data-filter="all"-->
+<!--                    type="button"-->
+<!--                    aria-pressed="true">-->
+<!--                All <span class="count">(9)</span>-->
+<!--            </button>-->
+<!--            <button-->
+<!--                    class="filter-chip"-->
+<!--                    data-filter="current"-->
+<!--                    type="button"-->
+<!--                    aria-pressed="false">-->
+<!--                Current <span class="count">(1)</span>-->
+<!--            </button>-->
+<!--        </div>-->
+
+<!--        <p>Click to know more...</p>-->
+
+<!--        <div class="volunteer-timeline" role="list" aria-label="Timeline of volunteering experiences">-->
+<!--            <div class="timeline-item current" role="listitem">-->
+<!--                <h3>Leader of Editorial Committee, KFUPM Yearbook</h3>-->
+<!--                <span class="date">09/2025 – Present</span>-->
+<!--                <p>Directed all aspects of the yearbook's written content, from idea development to final editing. Oversaw grammar and spelling accuracy, guided narrative flow, and ensured a cohesive structure that captured the year's story in a polished publication.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Vice Leader of Tech Committee, GSR</h3>-->
+<!--                <span class="date">05/2024 – 02/2025</span>-->
+<!--                <p>Led the technical execution of a global research conference (5,000+ attendees), including the launch of a dynamic website (360K+ visits), mobile app (1K+ downloads), and abstract submission system (1,300+ submissions). <a href="https://gsr.kfupm.org" target="_blank" rel="noopener noreferrer">gsr.kfupm.org</a></p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Vice Leader of PR & Media Team, UAS2030</h3>-->
+<!--                <span class="date">06/2024 – 08/2024</span>-->
+<!--                <p>Led the development of a comprehensive marketing plan tailored to the initiative's goals. Oversaw the PR and media team's execution across multiple channels, ensuring consistent messaging, strong engagement, and a cohesive public image.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Marketing Team Member, KFUPM Rally 2nd Edition</h3>-->
+<!--                <span class="date">03/2024 – 05/2024</span>-->
+<!--                <p>Supported the KFUPM Rally's innovation initiative as part of the Marketing Committee, contributing to content creation and digital strategy. Helped achieve a +120% increase in student idea submissions by driving engagement, storytelling, and creative outreach across multiple platforms.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Founder, FemTech (Women in Technology Initiative)</h3>-->
+<!--                <span class="date">02/2024</span>-->
+<!--                <p>Founded and branded FemTech, a student-led initiative empowering women in technology. Developed the visual identity, content strategy, and outreach materials. Led efforts to grow the initiative's presence, promote its core message <em>"CONNECT, INSPIRE, SUPPORT"</em>, and engage a wide tech audience.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Marketing Consultant, Female Media Club</h3>-->
+<!--                <span class="date">02/2024 – 05/2024</span>-->
+<!--                <p>Selected as marketing consultant following performance in TEDxKFUPM. Provided creative direction and strategic input to strengthen the club's digital presence.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Marketing Team Member, TEDxKFUPM</h3>-->
+<!--                <span class="date">10/2023 – 03/2024</span>-->
+<!--                <p>Crafted compelling event content and contributed to campaign planning, helping drive over 6,000 registrations and strong campus-wide engagement.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Member, KFUPM Women's Toastmasters Club</h3>-->
+<!--                <span class="date">10/2023 – 03/2024</span>-->
+<!--                <p>Active participant in public speaking sessions and workshops aimed at developing confidence, leadership, and communication skills.</p>-->
+<!--            </div>-->
+
+<!--            <div class="timeline-item" role="listitem">-->
+<!--                <h3>Volunteer, COVID-19 Vaccination Center</h3>-->
+<!--                <span class="date">10/2021 – 12/2021</span>-->
+<!--                <p>Contributed 350+ volunteer hours supporting the national vaccination campaign. Assisted with crowd management, registration, and public guidance, helping ensure smooth operations and community safety during the pandemic.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="volunteering" aria-labelledby="volunteering-heading">
+        <h2 id="volunteering-heading">Volunteering Experience</h2>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="group" aria-label="Filter volunteering experiences">
+            <button
+                    class="filter-chip active"
+                    data-filter="all"
+                    type="button"
+                    aria-pressed="true">
+                All <span class="count">(9)</span>
+            </button>
+            <button
+                    class="filter-chip"
+                    data-filter="current"
+                    type="button"
+                    aria-pressed="false">
+                Current <span class="count">(1)</span>
+            </button>
+        </div>
+
+        <p>Click to know more...</p>
+
+        <div class="volunteer-timeline" role="list" aria-label="Timeline of volunteering experiences">
+            <!-- Card 1: KFUPM Yearbook -->
+            <div class="timeline-item current" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/YB.png" alt="KFUPM Yearbook logo" loading="lazy">
+                </div>
+                <h3>Leader of Editorial Committee, KFUPM Yearbook</h3>
+                <span class="date">09/2025 – Present</span>
+                <p>Directed all aspects of the yearbook's written content, from idea development to final editing. Oversaw grammar and spelling accuracy, guided narrative flow, and ensured a cohesive structure that captured the year's story in a polished publication.</p>
+            </div>
+
+            <!-- Card 2: GSR -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/GSR.png" alt="GSR logo" loading="lazy">
+                </div>
+                <h3>Vice Leader of Tech Committee, GSR</h3>
+                <span class="date">05/2024 – 02/2025</span>
+                <p>Led the technical execution of a global research conference (5,000+ attendees), including the launch of a dynamic website (360K+ visits), mobile app (1K+ downloads), and abstract submission system (1,300+ submissions). <a href="https://gsr.kfupm.org" target="_blank" rel="noopener noreferrer">gsr.kfupm.org</a></p>
+            </div>
+
+            <!-- Card 3: UAS2030 -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/UAS2030.png" alt="UAS2030 logo" loading="lazy">
+                </div>
+                <h3>Vice Leader of PR & Media Team, UAS2030</h3>
+                <span class="date">06/2024 – 08/2024</span>
+                <p>Led the development of a comprehensive marketing plan tailored to the initiative's goals. Oversaw the PR and media team's execution across multiple channels, ensuring consistent messaging, strong engagement, and a cohesive public image.</p>
+            </div>
+
+            <!-- Card 4: KFUPM Rally -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/Rally.png" alt="KFUPM Rally logo" loading="lazy">
+                </div>
+                <h3>Marketing Team Member, KFUPM Rally 2nd Edition</h3>
+                <span class="date">03/2024 – 05/2024</span>
+                <p>Supported the KFUPM Rally's innovation initiative as part of the Marketing Committee, contributing to content creation and digital strategy. Helped achieve a +120% increase in student idea submissions by driving engagement, storytelling, and creative outreach across multiple platforms.</p>
+            </div>
+
+            <!-- Card 5: FemTech -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/FemTech.png" alt="FemTech logo" loading="lazy">
+                </div>
+                <h3>Founder, FemTech (Women in Technology Initiative)</h3>
+                <span class="date">02/2024</span>
+                <p>Founded and branded FemTech, a student-led initiative empowering women in technology. Developed the visual identity, content strategy, and outreach materials. Led efforts to grow the initiative's presence, promote its core message <em>"CONNECT, INSPIRE, SUPPORT"</em>, and engage a wide tech audience.</p>
+            </div>
+
+            <!-- Card 6: Female Media Club -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/Media Club.png" alt="Female Media Club logo" loading="lazy">
+                </div>
+                <h3>Marketing Consultant, Female Media Club</h3>
+                <span class="date">02/2024 – 05/2024</span>
+                <p>Selected as marketing consultant following performance in TEDxKFUPM. Provided creative direction and strategic input to strengthen the club's digital presence.</p>
+            </div>
+
+            <!-- Card 7: TEDxKFUPM -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/TedxKFUPM.png" alt="TEDxKFUPM logo" loading="lazy">
+                </div>
+                <h3>Marketing Team Member, TEDxKFUPM</h3>
+                <span class="date">10/2023 – 03/2024</span>
+                <p>Crafted compelling event content and contributed to campaign planning, helping drive over 6,000 registrations and strong campus-wide engagement.</p>
+            </div>
+
+            <!-- Card 8: Toastmasters -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/Toastmasters.png" alt="KFUPM Women's Toastmasters Club logo" loading="lazy">
+                </div>
+                <h3>Member, KFUPM Women's Toastmasters Club</h3>
+                <span class="date">10/2023 – 03/2024</span>
+                <p>Active participant in public speaking sessions and workshops aimed at developing confidence, leadership, and communication skills.</p>
+            </div>
+
+            <!-- Card 9: COVID-19 Vaccination -->
+            <div class="timeline-item" role="listitem">
+                <div class="timeline-logo">
+                    <img src="assets/images/volunteering/Health Volunteering.png" alt="Health Volunteering logo" loading="lazy">
+                </div>
+                <h3>Volunteer, COVID-19 Vaccination Center</h3>
+                <span class="date">10/2021 – 12/2021</span>
+                <p>Contributed 350+ volunteer hours supporting the national vaccination campaign. Assisted with crowd management, registration, and public guidance, helping ensure smooth operations and community safety during the pandemic.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Summaries Section -->
+    <section id="summaries" class="summaries" aria-labelledby="summaries-heading">
+        <h2 id="summaries-heading">Studying Notes</h2>
+        <p class="summaries-intro">
+            During my journey at KFUPM, I developed a habit of writing and sharing study notes to deepen my understanding of what I learn. This section brings together notes I have created and refined over time, with the aim of consolidating knowledge, supporting fellow students, and making learning more accessible.
+        </p>
+
+        <!-- Search and Filters Container -->
+        <div class="summaries-controls">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input
+                        type="text"
+                        id="summaries-search"
+                        class="search-input"
+                        placeholder="Search by course name or code..."
+                        aria-label="Search study notes"
+                >
+            </div>
+
+            <!-- Filters Row -->
+            <div class="filters-row">
+                <!-- Year Filter -->
+                <div class="filter-group">
+                    <label for="year-filter" class="filter-label">Year</label>
+                    <select id="year-filter" class="filter-select" aria-label="Filter by year">
+                        <option value="all">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Count -->
+        <div class="results-count" id="results-count" aria-live="polite" aria-atomic="true">
+            Showing <span id="shown-count">0</span> of <span id="total-count">0</span> notes
+        </div>
+
+        <!-- Notes Grid - All 11 Cards (Updated with Simple Metadata) -->
+        <div class="summaries-grid" id="summaries-grid" role="list" aria-label="Study notes">
+
+            <!-- Card 1: COE233 -->
+            <article class="note-card"
+                     data-name="Computer Organization and Assembly Language"
+                     data-code="COE233"
+                     data-year="2024"
+                     data-semester="241"
+                     data-priority="1"
+                     data-pdf-url="assets/summaries/COE233.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Computer Organization and Assembly Language</h3>
+                    <button class="download-btn" aria-label="Download COE233 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">COE 233</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">241</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2024</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2: ICS108 -->
+            <article class="note-card"
+                     data-name="Object-Oriented Programming"
+                     data-code="ICS108"
+                     data-year="2023"
+                     data-semester="232"
+                     data-priority="2"
+                     data-pdf-url="assets/summaries/ICS108.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Object-Oriented Programming</h3>
+                    <button class="download-btn" aria-label="Download ICS108 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">ICS 108</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">232</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3: ICS202 -->
+            <article class="note-card"
+                     data-name="Data Structures and Algorithms"
+                     data-code="ICS202"
+                     data-year="2023"
+                     data-semester="233"
+                     data-priority="3"
+                     data-pdf-url="assets/summaries/ICS202.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Data Structures and Algorithms</h3>
+                    <button class="download-btn" aria-label="Download ICS202 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">ICS 202</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">233</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4: ICS253 -->
+            <article class="note-card"
+                     data-name="Discrete Structures"
+                     data-code="ICS253"
+                     data-year="2024"
+                     data-semester="241"
+                     data-priority="4"
+                     data-pdf-url="assets/summaries/ICS253.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Discrete Structures</h3>
+                    <button class="download-btn" aria-label="Download ICS253 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">ICS 253</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">241</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2024</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5: ISE291 -->
+            <article class="note-card"
+                     data-name="Probability and Statistics for Engineers"
+                     data-code="ISE291"
+                     data-year="2024"
+                     data-semester="242"
+                     data-priority="5"
+                     data-pdf-url="assets/summaries/ISE291.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Probability and Statistics for Engineers</h3>
+                    <button class="download-btn" aria-label="Download ISE291 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">ISE 291</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">242</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2024</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6: MATH101 -->
+            <article class="note-card"
+                     data-name="Calculus 1"
+                     data-code="MATH101"
+                     data-year="2023"
+                     data-semester="223"
+                     data-priority="6"
+                     data-pdf-url="assets/summaries/MATH101.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Calculus 1</h3>
+                    <button class="download-btn" aria-label="Download MATH101 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">MATH 101</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">223</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7: MATH102 -->
+            <article class="note-card"
+                     data-name="Calculus 2"
+                     data-code="MATH102"
+                     data-year="2023"
+                     data-semester="231"
+                     data-priority="7"
+                     data-pdf-url="assets/summaries/MATH102.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Calculus 2</h3>
+                    <button class="download-btn" aria-label="Download MATH102 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">MATH 102</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">231</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8: MATH201 -->
+            <article class="note-card"
+                     data-name="Calculus 3"
+                     data-code="MATH201"
+                     data-year="2023"
+                     data-semester="232"
+                     data-priority="8"
+                     data-pdf-url="assets/summaries/MATH201.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Calculus 3</h3>
+                    <button class="download-btn" aria-label="Download MATH201 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">MATH 201</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">232</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 9: MATH208 -->
+            <article class="note-card"
+                     data-name="Differential Equations"
+                     data-code="MATH208"
+                     data-year="2023"
+                     data-semester="233"
+                     data-priority="9"
+                     data-pdf-url="assets/summaries/MATH208.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Differential Equations</h3>
+                    <button class="download-btn" aria-label="Download MATH208 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">MATH 208</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">233</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2023</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 10: SWE206 -->
+            <article class="note-card"
+                     data-name="Introduction to Software Engineering"
+                     data-code="SWE206"
+                     data-year="2024"
+                     data-semester="242"
+                     data-priority="10"
+                     data-pdf-url="assets/summaries/SWE206.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Introduction to Software Engineering</h3>
+                    <button class="download-btn" aria-label="Download SWE206 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">SWE 206</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">242</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2024</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 11: SWE216 -->
+            <article class="note-card"
+                     data-name="Software Requirements Engineering"
+                     data-code="SWE316"
+                     data-year="2024"
+                     data-semester="243"
+                     data-priority="11"
+                     data-pdf-url="assets/summaries/SWE216.pdf"
+                     role="listitem">
+                <div class="note-card-front">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="note-title">Software Requirements Engineering</h3>
+                    <button class="download-btn" aria-label="Download SWE316 notes">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="note-card-back">
+                    <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">SWE 216</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">242</span>
+                </span>
+                        <span class="metadata-item"><span class="metadata-label">•</span></span>
+                        <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2024</span>
+                </span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+
+
+        <!-- Card 11: SWE316 -->
+        <article class="note-card"
+                 data-name="Software Design Engineering"
+                 data-code="SWE316"
+                 data-year="2024"
+                 data-semester="243"
+                 data-priority="11"
+                 data-pdf-url="assets/summaries/SWE316.pdf"
+                 role="listitem">
+            <div class="note-card-front">
+                <div class="note-icon" aria-hidden="true">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                    </svg>
+                </div>
+                <h3 class="note-title">Software Requirements Engineering</h3>
+                <button class="download-btn" aria-label="Download SWE316 notes">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download</span>
+                </button>
+            </div>
+            <div class="note-card-back">
+                <div class="metadata-grid">
+                <span class="metadata-item">
+                    <span class="metadata-label">Code:</span>
+                    <span class="metadata-value">SWE 316</span>
+                </span>
+                    <span class="metadata-item"><span class="metadata-label">•</span></span>
+                    <span class="metadata-item">
+                    <span class="metadata-label">Term:</span>
+                    <span class="metadata-value">251</span>
+                </span>
+                    <span class="metadata-item"><span class="metadata-label">•</span></span>
+                    <span class="metadata-item">
+                    <span class="metadata-label">Year:</span>
+                    <span class="metadata-value">2025</span>
+                </span>
+                </div>
+            </div>
+        </article>
+
+        </div>
+
+        <!-- Empty State (hidden by default, shown when no results) -->
+        <div class="empty-state" id="empty-state" style="display: none;" role="status">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <p>No notes found matching your search criteria.</p>
+            <button class="reset-filters-btn" id="reset-filters" type="button">Reset Filters</button>
+        </div>
+
+            <!-- Empty State (hidden by default, shown when no results) -->
+            <div class="empty-state" id="empty-state" style="display: none;" role="status">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <p>No notes found matching your search criteria.</p>
+                <button class="reset-filters-btn" id="reset-filters" type="button">Reset Filters</button>
+            </div>
+
+            <!-- Empty State (hidden by default, shown when no results) -->
+            <div class="empty-state" id="empty-state" style="display: none;" role="status">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <p>No notes found matching your search criteria.</p>
+                <button class="reset-filters-btn" id="reset-filters" type="button">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in Touch</h2>
+        <p>Feel free to reach out for collaboration, questions, or feedback.</p>
+
+        <!-- Social Links -->
+        <div class="hero__icons" role="list" aria-label="Contact options">
+            <a
+                    class="icon"
+                    href="mailto:maryamsaladsani@gmail.com"
+                    aria-label="Send email"
+                    role="listitem">
+            </a>
+            <a
+                    class="icon"
+                    href="https://github.com/maryamsaladsani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile (opens in new tab)"
+                    role="listitem">
+            </a>
+            <a
+                    class="icon"
+                    href="https://shorturl.at/3AFIq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile (opens in new tab)"
+                    role="listitem">
+            </a>
+        </div>
+
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Your full name"
+                        required
+                        autocomplete="name"
+                        aria-required="true">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                        autocomplete="email"
+                        aria-required="true">
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="How can I help?"
+                        required
+                        aria-required="true"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <section id="notes" class="notes">
+
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+    <small>
+        © <time id="year">2025</time> Maryam Aladsani ·
+        <a href="#home">Back to top</a>
+    </small>
+</footer>
+
+<!-- Dynamic year update -->
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
