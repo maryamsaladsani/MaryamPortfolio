@@ -15,7 +15,7 @@
         maxRepos: 6,
         apiUrl: 'https://api.github.com/users',
         cacheKey: 'github_repos_cache',
-        cacheDuration: 5 * 60 * 1000, // 5 minutes
+        cacheDuration: 60 * 60 * 1000, // 1 hour
         retryDelay: 1000,
         maxRetries: 2
     };

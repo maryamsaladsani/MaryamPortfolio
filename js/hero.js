@@ -5,39 +5,16 @@
 
 class ModernHero {
     constructor() {
-        this.greeting = document.getElementById('greeting');
         this.ctaPrimary = document.querySelector('.cta-button--primary');
         this.ctaSecondary = document.querySelector('.cta-button--secondary');
         this.scrollIndicator = document.querySelector('.scroll-indicator');
 
-        this.initGreeting();
         this.initCTAHandlers();
         this.initScrollBehavior();
         this.initElementObserver();
         this.initRippleEffect();
     }
 
-    /**
-     * Display dynamic greeting based on time of day
-     */
-    initGreeting() {
-        const hour = new Date().getHours();
-        let greeting = '';
-
-        if (hour < 12) {
-            greeting = '☀️ Good Morning! Welcome to my portfolio.';
-        } else if (hour < 18) {
-            greeting = '🌤️ Good Afternoon! Explore my work below.';
-        } else {
-            greeting = '🌙 Good Evening! Check out my latest projects.';
-        }
-
-        if (this.greeting) {
-            this.greeting.textContent = greeting;
-            // Animate greeting appearance
-            this.greeting.style.animation = 'slideInUp 0.8s ease-out 0.5s both';
-        }
-    }
 
     /**
      * Initialize CTA button functionality
