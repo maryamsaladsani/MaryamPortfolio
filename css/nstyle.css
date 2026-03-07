@@ -180,7 +180,8 @@ ul, ol {
 
 /* === LIGHT THEME === */
 .theme-light {
-    --color-bg-primary: #ffffff;
+    /*--color-bg-primary: #ffffff;*/
+    --color-bg-primary: #f3f4f6;
     --color-bg-secondary: #ebebeb;
     --color-bg-tertiary: #e0e0e0;
     --color-surface: #ffffff;
@@ -190,11 +191,12 @@ ul, ol {
     --color-text-secondary: #525252;
     --color-text-muted: #0c0303;
 
-    --color-border: #ffffff;
+    --color-border:  #d1d5db;
     --color-border-light: #e5e7eb;
 
     --gradient-bg: linear-gradient(135deg, #f5f5f5 0%, #ebebeb 50%, #e0e0e0 100%);
 }
+
 
 /* Light theme specific adjustments */
 .theme-light .topbar {
