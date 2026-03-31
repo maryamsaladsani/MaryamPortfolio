@@ -1,0 +1,62 @@
+/*.carousel{*/
+/*    width: 100%;*/
+/*    overflow: hidden;*/
+/*    !*padding: 20px 0;*!*/
+/*    display: flex;*/
+/*    padding-top: -100px;*/
+/*}*/
+
+/*.group{*/
+/*    display: flex;*/
+/*    animation: scroll 5s linear infinite;*/
+/*    gap: 0.1em;*/
+/*    width: 200%;*/
+/*}*/
+
+/*.card {*/
+/*    flex: 0 0 auto;*/
+/*    width: 90px;*/
+/*    height: 90px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*@keyframes scroll{*/
+/*    0% {*/
+/*        transform : translateX(0);*/
+/*    }*/
+
+/*    100% {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*}*/
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: -200px ;
+}
+
+.group {
+    display: flex;
+    animation: scroll 5s linear infinite;
+    gap: 0.1em;
+}
+
+.card {
+    flex: 0 0 90px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200px);
+    }
+}
